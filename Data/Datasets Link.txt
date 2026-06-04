@@ -1,0 +1,7 @@
+arXiv dataset (https://www.kaggle.com/datasets/Cornell-University/arxiv) – for ScholarSort & PaperSummarizer.
+
+reference_metadata_2013.csv (from ISA dataset) – for LitRev‑AI include/exclude classifier.
+
+data_dictionary.pdf – just documentation, optional.
+
+https://catalog.data.gov/dataset/isa-literature-screening-dataset-v-1

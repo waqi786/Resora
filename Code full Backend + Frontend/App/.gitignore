@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Local Database (don't push)
+data/trilit.db
+
+# Large files are managed by Git LFS. Do not uncomment these.
+# data/arxiv_faiss.index
+# data/arxiv_embeddings.npy
+# data/arxiv_metadata.csv
+
+# Local Settings
+.vscode/
+
+# Output
+output/
