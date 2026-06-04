@@ -1,4 +1,4 @@
-# Resora v5 — AI-Powered Research Operating System 
+# Resora v5.0 — AI-Powered Research Operating System
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![PyQt5](https://img.shields.io/badge/UI-PyQt5-orange.svg)](https://pypi.org/project/PyQt5/)
@@ -7,9 +7,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **Resora** is a high-performance desktop research assistant designed for scholars, PhD students, and research teams. It streamlines the literature review process using semantic search, AI-driven analysis, and automated screening.
-
 ---
 
+## 🚀 Project Vision
 ## Overview
 
 Resora is a comprehensive desktop research assistant built in Python with a modern PyQt5 interface, a local SQLite workspace, and fast semantic retrieval over an ArXiv paper corpus. The app is designed for students, PhD scholars, researchers, and research teams who need a single workspace for discovery, analysis, screening, summarization, planning, and citation support.
@@ -51,6 +51,7 @@ The application combines:
 - Export search results to CSV, BibTeX, RIS, and EndNote
 - Open selected paper directly on arXiv
 
+### 🧠 AI-Powered Analysis & Summarization
 ### AI-powered analysis
 
 - Abstract summarization with BART-large-cnn
@@ -62,26 +63,27 @@ The application combines:
   - research type and impact score
   - keywords and hypothesis suggestions
 
-### Research management
+### 🛠️ Research Workflow Tools
 
 - Project workspace with paper collections and task tracking
 - Search history, summaries history, screening sessions, and bookmarks
 - Research gap finder for unexplored directions
 - Related-work draft generation and hypothesis building
-
-### Screening and PRISMA support
-
 - Inclusion/exclusion screening workflow
 - Threshold tuning and session audit
 - CSV import support for screening candidate papers
 - PRISMA-style counts and flow preparation
 
-### Billing, plans, and team support
+### 💳 Enterprise & Admin Features
 
 - Free, Pro, and University pricing model built into the app
+- **Stripe Integration**: Ready for live payments (requires API key).
 - Promo code upgrade support for fast plan changes
 - Billing page with plan descriptions and payment flow
 - Admin dashboard for user, revenue, ticket, and audit log management
+
+---
+
 
 ---
 
@@ -140,7 +142,7 @@ pip install -r requirements.txt
 
 ### Data files
 
-> [!IMPORTANT]
+> [!CAUTION]
 > Due to GitHub file size limits (100MB), the large pre-computed indices are excluded from the initial push. To fully run the application, ensure the following files are in your `data/` directory:
 
 ```text
