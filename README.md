@@ -1,137 +1,145 @@
-# Resora v5.0 — AI-Powered Research Operating System
+# 🛡️ Resora v5.0 — The AI-Powered Research Operating System
 
-**Resora** is a high-performance, AI-driven desktop ecosystem designed to modernize the academic research workflow. Built for scholars, PhD candidates, and research teams, it automates the most time-consuming parts of literature review, from discovery and screening to synthesis and citation management.
+**Resora** is a cutting-edge, high-performance desktop ecosystem engineered to revolutionize the academic research lifecycle. Designed specifically for scholars, PhD candidates, and institutional research teams, it automates the most grueling aspects of literature reviews—from high-speed semantic discovery and systematic screening to neural synthesis and PRISMA-compliant reporting.
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![PyQt5](https://img.shields.io/badge/UI-PyQt5-orange.svg)](https://pypi.org/project/PyQt5/)
 [![FAISS](https://img.shields.io/badge/Search-FAISS-green.svg)](https://github.com/facebookresearch/faiss)
 [![Transformers](https://img.shields.io/badge/AI-Transformers-red.svg)](https://huggingface.co/docs/transformers/index)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![LFS](https://img.shields.io/badge/Data-Git%20LFS-blueviolet.svg)](https://git-lfs.github.com/)
 
 ---
 
-## 🌟 Core Research Capabilities
+## 🌟 Executive Summary: Core Research Capabilities
 
-Resora is not just a search tool; it is a full-cycle Research Operating System that integrates:
+Resora transcends traditional reference management by providing a unified, AI-native workspace. It integrates advanced Natural Language Processing (NLP) with high-speed vector retrieval to solve the "Information Overload" problem in modern academia.
 
-*   **Semantic Discovery**: Search over 50,000+ ArXiv papers using FAISS (Facebook AI Similarity Search) and Sentence-Transformers. It understands context, not just keywords.
-*   **Neural Summarization**: Automated abstract condensation using `BART-large-cnn` models, providing plain-English insights from dense academic text.
-*   **LitRev-AI Screening**: A systematic literature review assistant that uses a PubMedBERT-based classifier to help you make Inclusion/Exclusion decisions faster.
-*   **Paper Analysis Engine**: Deep analysis of methodology, contributions, limitations, and future work directly from the abstract.
-*   **PRISMA 2020 Flow**: Automated generation of publication-ready PRISMA flow diagrams (PDF/PNG) based on your screening sessions.
-*   **Research Workspace**: A centralized project manager for bookmarks, reading lists, task tracking, and citation exports.
+### 🔑 Key Modules:
+*   **🧠 Semantic Discovery Engine**: Leveraging **FAISS** (Facebook AI Similarity Search) and `all-MiniLM-L6-v2` transformers to search 50,000+ papers based on conceptual meaning rather than rigid keywords.
+*   **📝 Neural Synthesis (Summarization)**: Utilizing `BART-large-cnn` architecture to condense dense academic abstracts into coherent, plain-English executive summaries.
+*   **⚖️ LitRev-AI Systematic Screening**: An advanced screening assistant using **PubMedBERT**-based classification to suggest Inclusion/Exclusion decisions, complete with a full decision audit trail.
+*   **📊 PRISMA 2020 Automation**: Generate publication-standard PRISMA flow diagrams (PDF/PNG) dynamically based on your screening sessions.
+*   **🔍 Deep Paper Analysis**: An automated extraction engine that identifies Research Methodologies, Contributions, Limitations, and Future Work from abstract text.
+*   **📅 Unified Research Workspace**: A centralized hub for project-based organization, task management with deadlines, and multi-format citation exports (BibTeX, RIS, EndNote).
 
 ---
 
-## 🛠️ Technical Stack
+## 📂 Detailed Submission Structure
+
+This repository contains the full 6th-semester NLP project submission. Below is the comprehensive directory map:
+
+| Component | Path | Description |
+| :--- | :--- | :--- |
+| **🚀 Core Software** | `Code full Backend + Frontend/App` | The production-ready Python/PyQt5 application. |
+| **📓 Model Training** | `Code Model Training & Other Things` | Jupyter notebooks for BERT fine-tuning and data preprocessing. |
+| **📦 Artifacts** | `Code Output like model etc` | Fine-tuned model weights and system backup zips. |
+| **💾 Data Assets** | `Data` | Metadata guides, data dictionaries, and reference dataset links. |
+| **📄 Documentation** | `Proposal File` & `Report` | Formal project proposal, SRS, and 50+ page technical report. |
+| **📸 Visual Media** | `Screenshots` | High-definition UI/UX walkthrough images. |
+| **🎬 Demonstration** | `Video` | A 1080p full-length system demonstration video. |
+
+---
+
+## 🛠️ Full Technical Architecture
 
 | Component | Technology |
 | :--- | :--- |
-| **Programming Language** | Python 3.11+ |
-| **Frontend Interface** | PyQt5 (Modern Slate/Indigo SaaS Theme) |
-| **Vector Database** | FAISS (High-speed similarity search) |
-| **NLP Models** | Transformers (BART, Sentence-Transformers, PubMedBERT) |
-| **Storage** | SQLite with WAL journaling (Robust local database) |
-| **Data Processing** | NumPy, Pandas, Scikit-learn |
-| **Visualizations** | Matplotlib (PRISMA & Trend Analytics) |
+| **Language** | Python 3.11+ (Optimized for Windows/Linux/macOS) |
+| **GUI Framework** | PyQt5 with custom QSS (Slate/Indigo SaaS aesthetics) |
+| **Vector Retrieval** | FAISS (Facebook AI Similarity Search) with Inner Product indexing |
+| **NLP Core** | Hugging Face Transformers, Sentence-Transformers, NLTK |
+| **Summarizer** | `facebook/bart-large-cnn` (Conditional Generation) |
+| **Database** | SQLite3 with **WAL Journaling** and Foreign Key constraints |
+| **Financials** | Stripe API Integration (Subscription & Credit logic) |
+| **Visuals** | Matplotlib (PRISMA flow generation) |
 
 ---
 
-## 📂 Repository Submission Structure
+## 🚀 Quick Start & Installation
 
-| Folder / File | Description |
-| :--- | :--- |
-| **App Source Code** | The primary Python/PyQt5 application code. |
-| **Model Training** | Jupyter notebooks for dataset processing and classifier training. |
-| **Model Artifacts** | Backups of fine-tuned models and system artifacts. |
-| **Data Resources** | ArXiv metadata guides and external dataset reference links. |
-| **Documentation** | Detailed Word/PDF technical reports and project proposal files. |
-| **Visuals** | High-resolution UI screenshots of all modules. |
-| **Video Demo** | 1080p demonstration video showing the full system workflow. |
+### 💻 Windows Setup (Recommended)
+Windows users should use the provided `setup_fix.bat` to ensure **CPU-only PyTorch** is installed correctly, preventing common DLL errors.
 
----
+1.  **Navigate to App Folder**:
+    ```powershell
+    cd "Code full Backend + Frontend/App"
+    ```
+2.  **Execute Fix Script**:
+    ```powershell
+    ./setup_fix.bat
+    ```
+3.  **Run Application**:
+    ```powershell
+    python main.py
+    ```
 
-## 🚀 Getting Started
-
-### Prerequisites
-*   Windows 10/11, macOS, or Linux.
-*   Python 3.11 or higher installed.
-*   At least 4GB of RAM (8GB recommended for Transformers).
-
-### Installation
-
-1.  **Clone and Navigate**:
-   ```bash
-   cd "Code full Backend + Frontend/App"
-   ```
-
-2.  **Run Setup (Windows)**:
-    This script ensures PyTorch is installed correctly for CPU to avoid DLL errors.
-   ```powershell
-   ./setup_fix.bat
-   ```
-
-3.  **Manual Install (Linux/macOS)**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-### Launching Resora
-
-   ```bash
-   python main.py
-   ```
+### 🐧 macOS / Linux Setup
+```bash
+cd "Code full Backend + Frontend/App"
+pip install -r requirements.txt
+python main.py
+```
 
 ---
 
-## 🧩 Module Breakdown
+## 🧠 Module Deep-Dive
 
-### 1. Smart Search (Semantic Retrieval)
-Uses a FAISS vector index of 50,000+ ArXiv papers. It allows researchers to find papers based on "ideas" rather than just keywords. If the model fails to load, the system falls back to an optimized TF-IDF search.
+### 1. The Research Workspace
+A robust project-management layer. Each project allows users to:
+*   Track paper reading status (Unread, Reading, Done).
+*   Assign task priorities (High, Medium, Low) with deadlines.
+*   Consolidate AI summaries and analysis results per project.
 
-### 2. Paper Analysis Engine
-Detects the research type (Survey, Empirical, Theoretical), methodology, contributions, and potential limitations. It also generates research hypotheses and provides a "Novelty/Reproducibility" score.
+### 2. Systematic Screening & PRISMA
+Designed for SLR (Systematic Literature Reviews):
+*   **Heuristic + ML Scoring**: Calculates a probability score for paper inclusion.
+*   **Session Persistence**: Save screening sessions to resume later.
+*   **Export**: Generate a full audit log in CSV and a PRISMA 2020 diagram.
 
-### 3. Literature Screening (PRISMA Support)
-Allows users to import CSV lists of papers and perform systematic screening. The system provides AI-suggested scores for inclusion/exclusion, tracks all decisions in an audit log, and generates PRISMA 2020 diagrams.
+### 3. AI Research Assistant (Chat)
+An expert system specialized in academic queries:
+*   Explains complex statistical concepts (P-values, ANOVA, etc.).
+*   Suggests appropriate research methodologies based on study aims.
+*   Provides templates for writing hypotheses and research gaps.
 
-### 4. AI Research Assistant
-An integrated Chat interface specialized in research methodology, statistical explanation, and study design advice.
-
-### 5. Research Workspace
-A robust project management system. Each project has its own paper collection, task manager with deadlines, and reading progress tracking.
-
----
-
-## 🔐 Access & Demo Credentials
-
-*   **Admin Email**: `admin@trilit.ai`
-*   **Admin Password**: `admin123`
-*   **Promo Codes**: `RESORA2026`, `PHD2024`, `UNIVERSITY2024` (For upgrading plans).
-
----
-
-## ⚠️ Large File Management (Git LFS)
-
-This project uses **Git LFS** (Large File Storage) for high-performance indices and model files:
-*   `arxiv_faiss.index` (Vector Index)
-*   `arxiv_embeddings.npy` (Numpy Embeddings)
-*   `trilit_ai_vscode.zip` (Project Backup)
-
-If cloning without LFS, please ensure these files are manually placed in the `App/data/` folder.
+### 4. Admin & Billing System
+A production-ready SaaS module:
+*   **Stripe Checkout**: Integrated payment flow for Pro/University plans.
+*   **Promo Codes**: Logic for `RESORA2026`, `PHD2024`, etc.
+*   **Admin Dashboard**: Manage user tiers, revenue tracking, and support tickets.
 
 ---
 
-## 📈 Implementation Details
-*   **Architecture**: Decoupled Model-View-Controller (MVC) pattern.
-*   **Database**: SQLite with WAL (Write-Ahead Logging) for safe multi-threaded access.
-*   **ML Fallbacks**: Heuristic sentence scoring is used if Transformer models are unavailable, ensuring zero-downtime.
-*   **UI**: Custom stylesheet (QSS) implementation for a modern, responsive Dark Mode.
+## 🔐 Access & Credentials
+
+| User Type | Email | Password |
+| :--- | :--- | :--- |
+| **System Admin** | `admin@trilit.ai` | `admin123` |
+| **Guest User** | N/A | Click "Continue as Guest" |
 
 ---
 
-## 📄 License
+## ⚠️ Data Integrity & Large Files (Git LFS)
 
-Distributed under the **MIT License**. This project is submitted as a final NLP project for the 6th Semester.
+This repository uses **Git LFS** to manage high-dimensional vector data and model artifacts. Ensure you have Git LFS installed to pull the following critical files:
+*   `arxiv_faiss.index`: 250MB+ vector index.
+*   `arxiv_embeddings.npy`: Pre-computed research embeddings.
+*   `trilit_ai_vscode.zip`: Full workspace backup.
 
-**Developed by:** Waqar Ali (waqi786)
+---
+
+## 🗺️ Roadmap & Future Enhancements
+*   [ ] **Multi-Agent RAG**: Integration of local PDF parsing for full-paper Q&A.
+*   [ ] **Cloud Sync**: Optional PostgreSQL backend for team-wide collaboration.
+*   [ ] **Zotero Integration**: Direct sync with Zotero/Mendeley libraries.
+
+---
+
+## 📄 Project Attribution
+
+Developed by **Waqar Ali** (waqi786) as a Final Year Project (6th Semester NLP).
+**Institution**: University Research Submission.
+**License**: MIT License.
+
+*Special thanks to Cornell University for the ArXiv dataset.*

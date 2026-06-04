@@ -142,7 +142,7 @@ pip install -r requirements.txt
 
 ### Data files
 
-> [!CAUTION]
+> [!IMPORTANT]
 > Due to GitHub file size limits (100MB), the large pre-computed indices are excluded from the initial push. To fully run the application, ensure the following files are in your `data/` directory:
 
 ```text
@@ -164,6 +164,12 @@ Run the desktop application with:
 
 ```bash
 python main.py
+```
+
+---
+
+## 📄 License
+Distributed under the **MIT License**. Created by **Waqar Ali**.
 ```
 
 ---
