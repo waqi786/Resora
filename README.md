@@ -56,7 +56,7 @@ This repository contains the full 6th-semester NLP project submission. Below is 
 
 ---
 
-## 🚀 Quick Start & Installation
+## 🚀 Quick Start & Installation:
 
 ### 💻 Windows Setup (Recommended)
 Windows users should use the provided `setup_fix.bat` to ensure **CPU-only PyTorch** is installed correctly, preventing common DLL errors.
