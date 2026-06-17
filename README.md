@@ -11,7 +11,7 @@
 
 ---
 
-## 🌟 Executive Summary: Core Research Capabilities::
+## 🌟 Executive Summary: Core Research Capabilities:
 
 Resora transcends traditional reference management by providing a unified, AI-native workspace. It integrates advanced Natural Language Processing (NLP) with high-speed vector retrieval to solve the "Information Overload" problem in modern academia.
 
