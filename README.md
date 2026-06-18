@@ -136,7 +136,7 @@ This repository uses **Git LFS** to manage high-dimensional vector data and mode
 
 ---
 
-## 📄 Project Attribution
+## 📄 Project Attribution:
 
 Developed by **Waqar Ali** (waqi786) as a Project (6th Semester NLP).
 **Institution**: University Research Submission.
