@@ -15,7 +15,7 @@
 
 Resora transcends traditional reference management by providing a unified, AI-native workspace. It integrates advanced Natural Language Processing (NLP) with high-speed vector retrieval to solve the "Information Overload" problem in modern academia.
 
-### 🔑 Key Modules:
+### 🔑 Key Modules
 *   **🧠 Semantic Discovery Engine**: Leveraging **FAISS** (Facebook AI Similarity Search) and `all-MiniLM-L6-v2` transformers to search 50,000+ papers based on conceptual meaning rather than rigid keywords.
 *   **📝 Neural Synthesis (Summarization)**: Utilizing `BART-large-cnn` architecture to condense dense academic abstracts into coherent, plain-English executive summaries.
 *   **⚖️ LitRev-AI Systematic Screening**: An advanced screening assistant using **PubMedBERT**-based classification to suggest Inclusion/Exclusion decisions, complete with a full decision audit trail.
